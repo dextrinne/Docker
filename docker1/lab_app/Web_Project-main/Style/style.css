@@ -1,0 +1,1169 @@
+/*---Общее для всех---*/
+* {
+    font-family: 'Montserrat';
+}
+
+.team,
+.info,
+.years {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+
+
+/*---Заголовки разделов---*/
+h3 {
+    text-align: center;
+    color: #050C33;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+
+/*---13 лет совершенствуем...---*/
+.years h3 {
+    text-align: left;
+    margin-bottom: 1vh;
+}
+
+.years p {
+    color: #4e5a73;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 1vh;
+}
+
+.inf-block {
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+}
+
+.inf-img {
+    height: 90px;
+    position: relative;
+    display: flex;
+}
+
+.inf-img::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("./IMG/icon-bg.svg") no-repeat left;
+    background-size: 115px 80px;
+    background-position: 0% 100%;
+}
+
+.inf-block p {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 1rem;
+}
+
+.inf-img img {
+    height: 81px;
+    width: 81px;
+}
+
+
+
+/*---8 блоков в начале---*/
+.container1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+
+.square {
+    width: 250px;
+    height: 270px;
+    background-color: white;
+    margin: 0 3px;
+    padding: 10px 20px 10px 10px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(5, 12, 51, 0.1), 0 0 0 rgba(5, 12, 51, 0.1);
+    z-index: 2;
+}
+
+.square:last-child {
+    box-shadow: 0 0 40px rgba(5, 12, 51, 0.1), 0 0 0 rgba(5, 12, 51, 0.1);
+}
+
+.number {
+    position: absolute;
+    top: 15px;
+    color: #646F85;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.square p {
+    color: #646F85;
+    font-size: 14px;
+    margin-right: 15px;
+    line-height: 1.2;
+    -webkit-text-stroke: 0.5px #646F85;
+}
+
+.number,
+.square h1,
+.square p {
+    position: relative;
+    z-index: 2;
+    left: 15px;
+}
+
+.square h1 {
+    color: #050C33;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 30px 0;
+    margin-bottom: 14px;
+    margin-right: 15px;
+}
+
+.square img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    z-index: 1;
+}
+
+#blocks {
+    margin-bottom: -15vh;
+}
+
+
+
+/*---Экспертиза в Drupal, опыт 14 лет!---*/
+.drupal {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background:
+        linear-gradient(270deg,
+            rgba(255, 255, 255, .276) -114.85%,
+            rgba(255, 255, 255, 0) 69.04%),
+        #040613;
+    padding: 50px 0;
+}
+
+.drupal .container0 {
+    position: relative;
+    z-index: 6;
+    flex: 1;
+    order: 2;
+    margin-left: 180px;
+    margin-top: 190px;
+}
+
+.drupal:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(./IMG/drupal-icon-2.svg) no-repeat right bottom;
+    background-size: contain;
+    z-index: 5;
+}
+
+.drupal-hide p {
+    border-left: 3px solid #f14d34;
+    min-height: 90px;
+    height: 100%;
+    padding: 10px;
+}
+
+.drupal-3 {
+    margin-bottom: 30px;
+}
+
+.side-laptop {
+    position: relative;
+    z-index: 6;
+    width: 40vw;
+    flex: 0 0 40vw;
+    order: 1;
+}
+
+.side-laptop img {
+    width: 100%;
+    transform: translateY(20%);
+}
+
+.drupal h3 {
+    text-align: left;
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 2rem; 
+    margin-top: 1.5rem;
+}
+
+.drupal-hide>p {
+    color: #ffffffb3;
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 250px;
+}
+
+.drupal-hide>p>a {
+    color: #f14d34;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.drupal-hide>p>a:hover {
+    text-decoration: none;
+}
+
+
+
+/*---Инфо про то, что выполняют разрабы---*/
+.info h3 {
+    text-align: left;
+    padding-bottom: 4vh;
+}
+
+.card-img-info {
+    width: 150px;
+    height: 100px;
+}
+
+.info-card-text {
+    text-align: left;
+    margin-top: 0.5vh;
+    color: #4e5a73;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.info-card-title {
+    margin-top: 0.5vh;
+    text-align: center;
+    color: #050C33;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+
+
+/*---Команда---*/
+.card-title {
+    color: #050C33;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card-text {
+    margin-top: 0.5vh;
+    color: #4e5a73;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.team h3 {
+    margin-bottom: 2vh;
+}
+
+.card-body {
+    margin-top: 1vh;
+}
+
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    text-decoration: none;
+    border: solid;
+    border-color: #050C33;
+    background: #ffffff;
+    padding: 15px 40px;
+    border-radius: 4px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+.glow-button:hover {
+    border-color: #f14d34;
+    color: #f14d34;
+    box-shadow: 0 5px 15px #f14d346f;
+}
+
+
+/*---Последние кейсы---*/
+.case-block {
+    display: flex;
+}
+
+.case-img-wrapper {
+    width: 100%;
+    max-height: 200px;
+}
+
+.case-img-wrapper>a>img {
+    object-fit: cover;
+    border-radius: 5px;
+    width: 100%;
+    max-height: 200px;
+}
+
+.case-wrapper-2 {
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+}
+
+.case-img-wrapper-2 {
+    width: 100%;
+    height: 100%;
+}
+
+.case-img-wrapper-2>a>img {
+    object-fit: cover;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+.case-img-wrapper-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(360deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 0) 55.58%);
+    z-index: 5;
+    border-radius: 5px;
+}
+
+.case-2-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 6;
+}
+
+.case-title {
+    color: #050C33;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.case-text {
+    color: #4e5a73;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.case-date {
+    color: #4e5a7399;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.case-2-title {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.case-2-date {
+    color: #ffffffb1;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.case-additional-text {
+    color: #48cae4;
+    font-weight: 500;
+}
+
+.case-block a:hover {
+    color: #f14d34;
+}
+
+
+/*---Отзывы---*/
+.testimonials-wrapper {
+    background: url(./IMG/quote.svg) no-repeat left top;
+    background-size: 15%;
+    padding-bottom: 60px;
+    margin-top: 5vh;
+}
+
+#testimonials.slick-prev,
+#testimonials.slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+#testimonials .content {
+    width: 980px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 74px;
+    position: relative;
+}
+
+#testimonials .content:before,
+#testimonials .content:after {
+    content: "";
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0px 4px 60px rgba(162, 162, 162, .25);
+    position: absolute;
+    left: 64px;
+    right: 64px;
+}
+
+#testimonials .content:before {
+    top: -40px;
+    bottom: 0;
+    opacity: .7;
+    border-radius: 5px;
+}
+
+#testimonials .content:after {
+    background: #fff;
+    opacity: .34;
+    border-radius: 5px;
+    top: -72px;
+    bottom: 0;
+    left: 128px;
+    right: 128px;
+}
+
+#testimonials .slick {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 10;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0px 4px 60px rgba(162, 162, 162, .25);
+    border-radius: 5px;
+    padding: 66px 0 66px 68px;
+}
+
+#testimonials .slick-slider {
+    width: 64%;
+    float: left;
+    padding-right: 60px;
+    border-right: 1px solid #cdcdcd;
+    padding: 14px 60px;
+}
+
+#testimonials .arrow {
+    width: 36%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#testimonials .arrow-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#testimonials .slide-num {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 28px;
+    vertical-align: middle;
+    color: #e0e0e0;
+}
+
+#testimonials .logo img {
+    margin: 0 0 40px;
+}
+
+#testimonials .report-text {
+    margin-bottom: 28px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #050c33;
+    outline: none;
+}
+
+#testimonials .report-author {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #838b9c;
+}
+
+#testimonials .report-text a,
+#testimonials .report-author a {
+    color: #050c33;
+    outline: none;
+    font-weight: 400;
+}
+
+#testimonials .slide-num-digit:nth-child(-n+2) {
+    color: #050c33;
+}
+
+.slick-prev,
+.slick-next {
+    position: static;
+    transform: none;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: block !important;
+    outline: none;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
+.slick-prev,
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-prev:active {
+    background-image: url('./IMG/arrow-left.jpg') !important;
+}
+
+.slick-next,
+.slick-next:hover,
+.slick-next:focus,
+.slick-next:active {
+    background-image: url('./IMG/arrow-right.jpg') !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    content: none;
+}
+
+
+
+/*---С нами работают---*/
+.working h2 {
+    text-align: center;
+    color: #4e5a73;
+    font-size: 16px;
+}
+
+.carousel img {
+    max-width: 60%;
+    max-height: 60%;
+}
+
+.carousel {
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: none;
+    overflow: hidden;
+    display: flex;
+}
+
+.carousel>* {
+    flex: 0 0 100%;
+}
+
+.group {
+    white-space: nowrap;
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+    will-change: transform;
+    display: flex;
+    animation: scrolling 90s linear infinite;
+}
+
+.group2 {
+    white-space: nowrap;
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+    will-change: transform;
+    display: flex;
+    animation: scrolling2 90s linear infinite;
+}
+
+.card {
+    width: 100%;
+    border-color: #050C33;
+    border-radius: 24px;
+    box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    min-width: 250px;
+    background: #ffffff;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scrolling2 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+/*---Вопросы в самом низу---*/
+.FAQ {
+    margin-top: 3vh;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.accordion {
+    color: #050C33;
+    padding-bottom: 50px;
+    --bs-accordion-border-color: #ffffff;
+}
+
+.accordion-header {
+    color: #050C33;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+    display: flex;
+}
+
+.accordion-content {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    font-size: 16px;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-item.active {
+    border: 4px solid #f14d34;
+}
+
+.accordion-item.active .accordion-header {
+    color: #f14d34;
+}
+
+.accordion-header h3 {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.accordion p {
+    color: #4e5a73;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.accordion-num {
+    color: #4e5a73d8;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+
+/*---Подвал---*/
+.footer-title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.footer-description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #c6c6c6;
+}
+
+.icon-small {
+    width: 25px;
+    height: 25px;
+}
+
+.footer-contact {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 1px;
+}
+
+.social-icon {
+    flex: 0 0 auto;
+}
+
+.footer-icon img {
+    width: 36px;
+    height: 36px;
+    transition: transform 0.2s ease;
+}
+
+.footer-icon img:hover {
+    transform: scale(1.2);
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #444;
+    padding: 10px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #bbb;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background-color: transparent;
+    border-color: #f14d34;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #f14d34;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #f14d34;
+}
+
+.form-check-input:focus {
+    border-color: #f14d34;
+    box-shadow: none;
+}
+
+.form-check-input:checked {
+    border-color: #f14d34;
+    background-color: transparent;
+}
+
+.form-check-label {
+    margin-left: 10px;
+}
+
+.contact-form input:-webkit-autofill,
+.contact-form textarea:-webkit-autofill {
+    background-color: transparent !important;
+    color: white !important;
+    border: 1px solid #444 !important;
+    -webkit-text-fill-color: white !important;
+    transition: background-color 5000s ease-in-out 0s, border-color 0.3s ease-in-out;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #f14d34 !important;
+    outline: none;
+}
+
+.contact-form input:-webkit-autofill:focus,
+.contact-form textarea:-webkit-autofill:focus {
+    border-color: #f14d34 !important;
+}
+
+.footer {
+    background: linear-gradient(254.72deg, rgba(255, 255, 255, .276) -114.85%, rgba(177, 62, 62, 0) 69.04%), #040613;
+    position: relative;
+    color: white;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.footer-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.footer-image {
+    position: absolute;
+    z-index: 2;
+    max-width: 27%;
+}
+
+.image-1 {
+    top: 0%;
+    left: 35%;
+}
+
+.image-2 {
+    bottom: 0;
+    right: 0%;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 3;
+}
+
+.footer-divider {
+    border-top: 1px solid #666;
+    margin: 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-note {
+    font-size: 13px;
+    margin-bottom: 0;
+    text-align: left;
+    margin-left: 0;
+    color: #c6c6c6;
+}
+
+
+
+@media (max-width: 1350px) {
+
+    .years h3,
+    .years p {
+        text-align: start;
+    }
+
+    .info-card-text {
+        font-size: 20px;
+    }
+
+    .team,
+    .info {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .FAQ {
+        padding-left: 5vh;
+        padding-right: 5vh;
+    }
+
+    .testimonials-wrapper {
+        background-size: 20%;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .square {
+        width: 180px;
+    }
+
+    #blocks {
+        margin-bottom: -3vh;
+    }
+
+    /*---Экспертиза в Drupal, опыт 14 лет!---*/
+    .drupal { 
+        flex-direction: column; 
+        padding: 20px 0;  
+    } 
+ 
+    .drupal .container0 { 
+        margin-left: 0;  
+        margin-top: 20px;  
+        order: 1;  
+    } 
+ 
+    .side-laptop { 
+        width: 100%;  
+        flex: 0 0 auto;  
+        order: 2;  
+        margin-top: -10vh;  
+    } 
+
+    .side-laptop img {
+        width: 100%;
+        transform: translateY(16%);
+    }
+
+    .row-flex,
+    .row {
+        margin-right: 0;
+    }
+
+    .row {
+        margin-top: 3vh;
+    }
+ 
+}
+
+@media (max-width: 899px) {
+
+    h3 {
+        font-size: 30px;
+    }
+
+    .years h3,
+    .years p {
+        text-align: start;
+    }
+
+    .center-button {
+        margin-top: 2vh;
+    }
+
+    /*---8 блоков в начале---*/
+    .container1 {
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 0;
+    }
+
+    .square {
+        width: 100%;
+        margin: 0 0 6px 0;
+        height: auto;
+        padding: 10px;
+    }
+
+    .square img {
+        width: 100%;
+        max-width: 55px;
+        height: auto;
+    }
+
+    .square h1 {
+        font-size: 14px;
+    }
+
+    .square p {
+        font-size: 12px;
+    }
+
+    #blocks {
+        margin-bottom: -3vh;
+    }
+
+    /*---Экспертиза в Drupal, опыт 14 лет!---*/
+    .drupal { 
+        flex-direction: column; 
+        padding: 20px 0;  
+    } 
+ 
+    .drupal .container0 { 
+        margin-left: 0;  
+        margin-top: 20px;  
+        order: 1;  
+    } 
+ 
+    .side-laptop { 
+        width: 100%;  
+        flex: 0 0 auto;  
+        order: 2;  
+        margin-top: 20px;  
+    } 
+
+    .row-flex,
+    .row {
+        margin-right: 0;
+    }
+ 
+    .side-laptop img { 
+        transform: translateY(19%); 
+    } 
+
+    /*---Размер блока с информацией про то, что выполняют разрабы---*/
+    .card-img-info {
+        width: 150px;
+        height: 100px;
+    }
+
+    .info-card-text {
+        font-size: 20px;
+    }
+
+    /*---Размеры блока---*/
+    .FAQ,
+    .team,
+    .info,
+    .years {
+        padding-left: 3vh;
+        padding-right: 3vh;
+    }
+
+    /*---Настройка расположения текста над блоком "С нами сотрудничают"---*/
+    .working h2 {
+        text-align: left;
+        padding-left: 3vh;
+    }
+
+    /*---Адаптация отзывов---*/
+    .testimonials-wrapper {
+        background-size: 25%;
+    }
+
+    #testimonials {
+        margin-bottom: 110px;
+        padding-top: 35px;
+    }
+
+    #testimonials .content {
+        margin-top: 48px;
+    }
+
+    #testimonials .content:after {
+        left: 68px;
+        right: 68px;
+        top: -48px;
+    }
+
+    #testimonials .content:before {
+        left: 34px;
+        right: 34px;
+        top: -25px;
+    }
+
+    #testimonials .slick {
+        display: block;
+        padding: 15px;
+    }
+
+    #testimonials .slick-slider,
+    #testimonials .arrow {
+        width: 100%;
+        float: none;
+        display: block;
+        padding: 20px 15px;
+        border: none;
+    }
+
+    #testimonials .arrow {
+        text-align: center;
+        border-top: 1px solid #cdcdcd;
+    }
+
+    #testimonials .arrow-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slick-slider {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .arrow {
+        order: 1;
+        margin-top: 20px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        position: static;
+        transform: none;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .footer-title {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .footer-contact {
+        font-size: 21px;
+        font-weight: bold;
+    }
+
+    .footer-image {
+        max-width: 50%;
+    }
+
+    .image-1 {
+        top: 0%;
+        left: 35%;
+    }
+
+    .image-2 {
+        bottom: 0%;
+        right: 0%;
+    }
+}
+
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("./Fonts/Montserrat-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("./Fonts/Montserrat-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("./Fonts/Montserrat-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
