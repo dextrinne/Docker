@@ -14,8 +14,6 @@ services:
     build:
       target: flask
     container_name: flask-app
-    ports: 
-      - "5001:5000" 
     depends_on:
       - db
     command: >
@@ -23,8 +21,6 @@ services:
 
   lab_app: 
     image: httpd:latest
-    ports:  
-      - "8080:8080" 
     container_name: my-apache-app
     volumes:
       - ./lab_app/Web_Project-main/:/usr/local/apache2/htdocs
