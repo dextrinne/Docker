@@ -22,7 +22,7 @@ jobs:
       # Шаг 3: Сборка Docker-образа
       - name: Build Docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/my_shell:latest ./docker2
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/my_shell:latest ./docker2 
 
       # Шаг 4: Публикация образа в DockerHub
       - name: Push Docker image
