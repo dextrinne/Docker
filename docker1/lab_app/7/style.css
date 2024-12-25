@@ -1,0 +1,73 @@
+html{
+    background-color: #90CAF9;
+}
+
+body{
+    margin:0;
+}
+
+.slick-track{
+    display: flex;
+    min-width:0;
+}
+
+.slick-list{
+    overflow: hidden;
+}
+.slider{
+    margin-top:10%;
+    position: relative;
+    padding: 5%;
+    background-color: #fad4d8;
+}
+.slider .slick-arrow{
+    position:absolute;
+    top:45%;
+    z-index:10;
+    font-size:0;
+    width: 30px;
+    height: 30px;
+    color:#ffffff;
+    border:0;
+}
+
+.slider .slick-arrow.slick-prev{
+    left:20px;
+    background: url('images/prev.png') 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next{
+    right:20px;
+    background: url('images/next.png') 0 0 / 100% no-repeat;
+}
+
+.slider .slick-dots{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin:auto;
+    padding:0;
+}
+
+.slider .slick-dots li{
+    list-style:none;
+    margin:10px;
+}
+
+.slider .slick-dots button{
+    font-size:0;
+    width: 16px;
+    height:16px;
+    background-color:#ffffff;
+    border-radius: 100%;
+    border-color:#BFDBF7;
+}
+
+.slider .slick-dots li.slick-active button{
+    background-color:#90CAF9;
+    border-color:#64B5F6;
+}
+
+.slider .slider_item{
+    margin:auto;
+}
